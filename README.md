@@ -91,7 +91,7 @@ Use this length to determine the distance between the pot and the self-driving c
 
 Using the distance between the pot and the self-driving car, the robot arm decides how much the arm should stretch and sends the value to the stm board using serial communication.
 
-<br>/
+<br/>
 
 ![distance](https://user-images.githubusercontent.com/68395698/110616615-16c72100-81d8-11eb-8430-ad7efe2d7993.JPG)
 
@@ -113,7 +113,7 @@ operate robot arms and water pumps.
 After the robot arm and the water pump are finished, the robot arm will return to its initial state.
 It issues a message to the robot wheel raspberry pi via mqtt to inform them that the water supply operation is over.
 
-</br>
+<br/>
 
 # Gitta Web Interface
 
