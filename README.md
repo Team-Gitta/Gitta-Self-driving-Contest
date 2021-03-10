@@ -90,6 +90,9 @@ Measure the length of four sides using four points of the QR code.
 Use this length to determine the distance between the pot and the self-driving car.
 
 Using the distance between the pot and the self-driving car, the robot arm decides how much the arm should stretch and sends the value to the stm board using serial communication.
+
+<br>/
+
 ![distance](https://user-images.githubusercontent.com/68395698/110616615-16c72100-81d8-11eb-8430-ad7efe2d7993.JPG)
 
 <br/>
