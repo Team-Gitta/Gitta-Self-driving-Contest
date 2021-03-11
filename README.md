@@ -31,6 +31,8 @@
 
 ### Because the height, distance, and angle of the pot are automatically measured using the QR code, users only need to enter simple information about the pot in our websites
 
+![cart](https://user-images.githubusercontent.com/68395698/110747095-29496500-8281-11eb-98ed-cba89a1a1eb9.png)
+
 <br/>
 
 ## QR code detection
@@ -45,7 +47,7 @@ If the id values match,
 Get coordinates of four points of the QR code.
 Use the coordinates of the points to determine the angle, height, and distance of the pot.
 
-<br/>
+Locate the QRcode and draw blue lines using opencv
 
 ![pot](https://user-images.githubusercontent.com/68395698/110612901-fb5a1700-81d3-11eb-98bc-183ca669a86b.JPG)
 
