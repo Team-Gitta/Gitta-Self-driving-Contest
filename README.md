@@ -31,7 +31,7 @@
 
 # QRcode Processing And Robot Arm Control
 
-### Because the height, distance, and angle of the pot are automatically measured using the QR code, users only need to enter simple information about the pot in our websites
+Because the height, distance, and angle of the pot are automatically measured using the QR code, users only need to enter simple information about the pot in our websites
 
 ![cart](https://user-images.githubusercontent.com/68395698/110747095-29496500-8281-11eb-98ed-cba89a1a1eb9.png)
 
@@ -121,7 +121,7 @@ A message is issued in the robot wheel raspberry pi via mqtt to inform that the 
 
 # Gitta Web Interface
 
-### A website where users register their own pot information and generate QR codes
+A website where users register their own pot information and generate QR codes
 
 <br/>
 
