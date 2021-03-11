@@ -39,17 +39,17 @@
 
 ## QR code detection
 
-When the self-driving car arrives in front of the pot and stops, starts QRcode detection.
+When the self-driving car arrives in front of the pot, it stops and starts detection.
 
-Detect QR code and decode it in the raspberry pi.
+[QRcode processing program](https://github.com/Team-Gitta/QRcode-Processing) in the raspberry pi detects QR code and decodes it.
 The information in the Qrcode is the source of the pot.
-Check that the value is equal to the id of the pot that needs to be watered.
+It Checks that the value is equal to the id of the pot that needs to be watered.
 
 If the id values match,
-Get coordinates of four points of the QR code.
-Use the coordinates of the points to determine the angle, height, and distance of the pot.
+get coordinates of four points of the QR code.
+Using the coordinates of the points, the angle, height, and distance of the pot are determined.
 
-Locate the QRcode and draw blue lines using opencv
+QRcode processing program in the raspberry pi locates the QRcode and draw blue lines using opencv
 
 ![pot](https://user-images.githubusercontent.com/68395698/110612901-fb5a1700-81d3-11eb-98bc-183ca669a86b.JPG)
 
@@ -59,7 +59,7 @@ Locate the QRcode and draw blue lines using opencv
 
 The angle of the pot and the self-driving car is determined using the position of the QR code point.
 
-Divide the sections by angle and check which section of the pot comes in.
+QRcode processing system divides the sections by angle and checks which section of the pot comes in.
 After the decision is determined, the value is sent to the robot arm stm board using serial communication.
 
 ![angle1](https://user-images.githubusercontent.com/68395698/110614283-84be1900-81d5-11eb-8fe5-f3e75daa8d06.JPG)
@@ -74,9 +74,9 @@ After the decision is determined, the value is sent to the robot arm stm board u
 
 ## Measuring the height of the pot
 
-Measure the height of the pot using the point position at the top of the QR code.
+The height of the pot is measured using the point position at the top of the QR code.
 
-Determine which section comes in according to the height of the pot and send it to the robot arm stm board.
+QRcode processing program determines which section comes in according to the height of the pot and send it to the robot arm stm board.
 
 ![height](https://user-images.githubusercontent.com/68395698/110616143-91437100-81d7-11eb-87ea-a7df586a4a62.JPG)
 
@@ -89,9 +89,9 @@ Determine which section comes in according to the height of the pot and send it 
 
 ## Measuring the distance between pot and self-driving car
 
-Measure the length of four sides using four points of the QR code.
+The length of four sides is measured using four points of the QR code.
 
-Use this length to determine the distance between the pot and the self-driving car.
+Using this length, the distance between the pot and the self-driving car is determined.
 
 Using the distance between the pot and the self-driving car, the robot arm decides how much the arm should stretch and sends the value to the stm board using serial communication.
 
@@ -103,9 +103,9 @@ Using the distance between the pot and the self-driving car, the robot arm decid
 
 ## Water supply transmission
 
-Bring registered feedwater information from database by matching the id of the Qrcode
+QRcode processing program brings registered feedwater information from database by matching the id of the Qrcode
 
-Calculate the operation time of the water pump using the water supply information and send it to the stm board.
+It calculates the operation time of the water pump using the water supply information and send it to the stm board.
 
 <br/>
 
@@ -115,7 +115,7 @@ Using the values received by serial communication in the previous step on the st
 operate robot arms and water pumps.
 
 After the robot arm and the water pump are finished, the robot arm will return to its initial state.
-It issues a message to the robot wheel raspberry pi via mqtt to inform them that the water supply operation is over.
+A message is issued in the robot wheel raspberry pi via mqtt to inform that the water supply operation is over.
 
 <br/>
 
